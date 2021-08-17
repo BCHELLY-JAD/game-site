@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="JS/home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="jad Bchelly">
+    <title>Game G</title>
+</head>
+<body>
+    <header> 
+    <div class=" container nav-container"> 
+        <img onclick="refresh()" src="images/logo.png">
+        <nav> 
+            <ul> 
+                <li class="current"><a href="home.html">Games</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Categories -->
+    <div id="catego"> 
+    <div class="mostTitle">Most Popular</div>
+    <div class="hidecat"></div>
+
+    <div class="popular"></div>
+    <div id="catPlus"></div>
+
+        <div class="categoriesParent"><div style="margin-top:60px" id="categoriesContainer"> </div></div>
+
+    
+    <span id="arrowCat"><img src="images/morecats.png"></span>     
+</div>
+    
+    <div onclick="changeRight()" class="arrowRight"><img src="images/arrow1.png"></div>
+    <div onclick="changeLeft()" class="arrowLeft"><img src="images/arrow2.png"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar3"></div>
+    <div class="barTop"></div>
+    
+    <div class="export"><img src="images/export.png"></div>
+    <div class="slide"> 
+        <span class="slide2"><img class="first" src="images/slide2.png"></span>
+        <span class="slide1"><img class="second" src="images/slide1.png"></span>
+        <span class="slide3"><img class="third" src="images/slide3.jpg"></span>
+    </div>
+    <div id="catego">
+        <div class="filters">  
+            <p>Filters</p>
+            <table style="padding:20px;" cellpadding = "0" cellspacing="0"> 
+                <tr> 
+                    <td> 
+                        <img class="icon1"  src="images/multiplayer.png">
+                    </td>
+                    <td> 
+                        <input class="filter1" type="text" placeholder="Multiplayer">
+                    </td>
+                </tr>
+            </table>
+    
+            <table style="padding:20px;" cellpadding = "0" cellspacing="0"> 
+                <tr> 
+                    <td> 
+                        <img class="icon1"  src="images/infinite.jpg">
+                    </td>
+                    <td> 
+                        <input class="filter1" type="text" placeholder="Infinite Play">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="gamesAvailable"></div>
+        </div> 
+
+
+    <br> 
+    <div id="catego">
+    <div  id="itemsContainer" class="just"> </div>
+    <div id="catTitle"></div>
+    </div>
+
+    
+
+
+    <a style="margin-top: 50px;" class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="BEIRUT" data-label_2="WEATHER" data-theme="original" >BEIRUT WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+    <script> 
+    function refresh(){ 
+        location.href = "home.html";
+    }
+    
+    let slide = document.getElementById('arrowCat')
+    slide.onclick = function() { 
+    document.getElementById('categoriesContainer').style.left = "-50px";
+    document.getElementById('catPlus').style.visibility = "visible" 
+    slide.style.visibility = "hidden";
+}
+
+</script>
+</body>
+</html>

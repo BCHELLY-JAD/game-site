@@ -1,0 +1,88 @@
+#snakeBody{ 
+    height:100vh; 
+    width: 100vw; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    background-color: #000;
+}
+
+#box{ 
+    
+    background-color: #ccc;
+    width:800px;
+    height: 600px; 
+    display: grid;
+    margin-top: 90px;
+    border: 5px solid #ff0000;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+
+#box1{ 
+   
+    background-color: #ccc;
+    width:600px;
+    height: 400px; 
+    display: grid;
+    margin-top: 90px;
+    border: 5px solid #ff0000;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+#snakeDetails{ 
+    color:#fff; 
+    position: absolute;
+    top:30px;
+    font-size: 20px;
+}
+
+.adjust{ 
+    margin-left: 20px;
+}
+
+.adjustStartGame{ 
+    margin-left: 130%;
+    
+    top:0px;
+    position: absolute;
+}
+
+
+.adjustStartGame button{ 
+    border: 2px solid #ff0000;
+    width:150px;
+    font-size: 20px;
+    color:#fff;
+    background-color: #000; 
+    cursor: pointer;
+
+}
+
+.adjustStartGame button:hover{ 
+    background-color: #fff; 
+    color:#000; 
+    
+}
+
+
+.snake{ 
+    background-color: #ff0000;
+    border: .20vmin solid #000;;
+}
+
+
+.food{ 
+    background-color: cyan;
+    border: .20vmin solid #000;
+}
+
+.middle{ 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+}
+
